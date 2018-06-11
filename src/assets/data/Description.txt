@@ -1,0 +1,8 @@
+1. Create global variable of jsonData.constants at window level
+2. Create global variable for those which are not avaiable in jsonData.constants but has been specified in 
+    jsonData.expression from table(if available)
+3. Use eval() to evaluate jsonData.expression
+
+eg. 
+jsonData.expression = "(Sum_Assured*2)+extra"
+ -->> Sum_Assured/extra = jsonData.constants/table_col_name
